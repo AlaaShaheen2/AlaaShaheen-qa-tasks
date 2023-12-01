@@ -1,4 +1,5 @@
 it("Task2", () => {
+    //to visit the website
   cy.visit("/checkout/#shipping");
   cy.get("#search").type("shirt");
   cy.get(".action.search").click();
