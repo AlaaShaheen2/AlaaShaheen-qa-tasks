@@ -14,8 +14,8 @@ describe("Task#6", () => {
     cy.get("#SearchProductName").clear().type("laptop");
     cy.get("#search-products").click();
     cy.wait(1000);
-    cy.get(".input.mastercheckbox").last().check();
-
+    cy.get(".checkboxGroups").check();
+    cy.wait(1000);
     cy.get("#delete-selected").click();
   });
 });
