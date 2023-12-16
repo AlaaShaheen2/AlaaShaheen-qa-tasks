@@ -17,5 +17,9 @@ describe("Task#6", () => {
     cy.get(".checkboxGroups").check();
     cy.wait(1000);
     cy.get("#delete-selected").click();
+    cy.contains("Are you sure you want ").should(
+      "contain",
+      "Are you sure you want to perform this action?"
+    );
   });
 });
