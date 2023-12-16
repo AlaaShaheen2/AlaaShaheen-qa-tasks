@@ -8,5 +8,8 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     baseUrl: "https://magento.softwaretestingboard.com/",
+    // experimentalStudio:true, 
+    // trashAssetsBeforeRuns:true,
+    // screenshotOnRunFailure:true,
   },
 });
