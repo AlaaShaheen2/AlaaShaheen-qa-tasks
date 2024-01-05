@@ -1,5 +1,9 @@
 import { Given, Then, When } from "cypress-cucumber-preprocessor/steps";
-
+before(() => {
+  cy.visit("https://admin-demo.nopcommerce.com/");
+  cy.loginNopcommerce();
+  cy.wait(3100);
+});
 Given("The user click on promotions area", () => {
   cy.contains("Promotions").click();
 });
