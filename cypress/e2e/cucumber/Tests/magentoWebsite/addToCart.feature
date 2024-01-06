@@ -23,7 +23,6 @@ Feature: Add product to cart functionality
     Scenario Outline: Verify that the user can add product to cart successfully
         And The user search for shirt product
         When The user choose the product X
-        And The user choose the size "<sizeData>" and color "<color>" for product X
         And The user click on Add to cart button
         Then The product should be added to the cart successfully with "You added Radiant Tee to your shopping cart."
         And The counter of the cart should be visible
